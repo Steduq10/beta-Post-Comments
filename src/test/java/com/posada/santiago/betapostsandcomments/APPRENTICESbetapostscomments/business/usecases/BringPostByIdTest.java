@@ -28,13 +28,13 @@ class BringPostByIdTest {
     private BringPostById useCaseMock;
 
     @Test
-    @DisplayName("BringPostByIdTest. Should Return a PostView Model from the Database")
+    @DisplayName("BringPostByIdTest")
     void bringPostByIdTest(){
 
         PostViewModel postViewModel = new PostViewModel(
                 "1",
-                "Santiago Sierra",
-                "First Post",
+                "Steven Duque",
+                "Testing post",
                 new ArrayList<>()
         );
 

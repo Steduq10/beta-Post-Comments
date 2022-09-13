@@ -30,14 +30,14 @@ class BringAllPostsUseCaseTest {
     private BringAllPostsUseCase useCaseMock;
 
     @Test
-    @DisplayName("BringAllPostsUseCaseTest. Should Return a List of PostViewModels from the Database")
+    @DisplayName("BringAllPostsUseCaseTest")
     void bringAllPostsUseCaseTest(){
 
         //Arrange
         PostViewModel postViewModel = new PostViewModel(
                 "1",
-                "Santiago Sierra",
-                "First Post",
+                "Steven Duque",
+                "Testing post",
                 new ArrayList<>()
         );
 

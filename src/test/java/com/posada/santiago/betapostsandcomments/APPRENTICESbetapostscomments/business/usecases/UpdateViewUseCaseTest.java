@@ -42,19 +42,19 @@ class UpdateViewUseCaseTest {
     }
 
     @Test
-    @DisplayName("updateViewUseCasePostCreatedTest. Should use proper bus and repository methods")
+    @DisplayName("updateViewUseCasePostCreatedTest")
     void updateViewUseCasePostCreatedTest(){
 
         //Arrange
         PostCreated postCreated = new PostCreated(
-          "Firts Post",
-          "Santiago Sierra"
+          "Testing post",
+          "Steven Duque"
         );
 
         PostViewModel postViewModel = new PostViewModel(
             "1",
-                "Santiago Sierra",
-                "Firts Post",
+                "Steven Duque",
+                "Testing post",
                 new ArrayList<>()
         );
 
@@ -77,29 +77,29 @@ class UpdateViewUseCaseTest {
     }
 
     @Test
-    @DisplayName("updateViewUseCaseCommentAddedTest. Should use proper bus and repository methods")
+    @DisplayName("updateViewUseCaseCommentAddedTest")
     void updateViewUseCaseCommentAddedTest(){
 
         //Arrange
 
         CommentAdded commentAdded = new CommentAdded(
             "1",
-                "Santiago Sierra",
-                "Great Comment"
+                "Steven Duque",
+                "Test is working"
         );
 
 
         CommentViewModel commentViewModel = new CommentViewModel(
             "1",
                 "1",
-                "Santiago Sierra",
-                "Great Comment"
+                "Steven Duque",
+                "Test is working"
         );
 
         PostViewModel postViewModel = new PostViewModel(
                 "1",
-                "Santiago Sierra",
-                "Firts Post",
+                "Steven Duque",
+                "Testing post",
                 new ArrayList<>()
         );
 
