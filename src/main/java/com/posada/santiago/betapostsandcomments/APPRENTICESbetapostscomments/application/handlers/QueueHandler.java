@@ -23,7 +23,7 @@ public class QueueHandler implements Consumer<String> {
     public void accept(String received) {
         //Finish the implementation of this Method
         Notification notification = gson.fromJson(received, Notification.class);
-        String type = notification.getType().replace("sofka.alphapostcomments", "posada.santiago.betapostsandcomments.APPRENTICESbetapostscomments");
+        String type = notification.getType().replace("posada.santiago.alphapostsandcomments", "posada.santiago.betapostsandcomments.APPRENTICESbetapostscomments");
         try {
             DomainEvent event = (DomainEvent) gson.fromJson(notification.getBody(), Class.forName(type));
             useCase.accept(event);
